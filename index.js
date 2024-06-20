@@ -14,7 +14,7 @@ wss.on('connection', function connection(ws) {
     });
 });
 
-function sendGayMessage(ws) {
+function sendAuthMessage(ws) {
     const message = JSON.stringify({ gay: true });
     ws.send(message);
 }
